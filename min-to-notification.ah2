@@ -1,10 +1,8 @@
-﻿;TODO: Make compilation step freeze variables into .exe so only .exe is needed
-#SingleInstance Force
+﻿#SingleInstance Force
 SetWorkingDir(A_ScriptDir)  ; Ensures a consistent starting directory.
 SetTitleMatchMode(2)
 
 ;Loading config variables
-iconPath := IniRead("conf.ini", "config", "iconPath", "")
 launchPath := IniRead("conf.ini", "config", "launchPath")
 
 processId := ""
@@ -49,10 +47,6 @@ AddMenuItems(ShowOrHide) {
 }
 
 AddMenuItems("Show")
-
-if(iconPath != "") {
-    TraySetIcon(iconPath)
-}
 
 WinWait(windowName)
 WinHide(windowName)
