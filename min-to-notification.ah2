@@ -1,5 +1,5 @@
-﻿#SingleInstance Force
-Persistent(true)
+﻿;TODO: Make compilation step freeze variables into .exe so only .exe is needed
+#SingleInstance Force
 SetWorkingDir(A_ScriptDir)  ; Ensures a consistent starting directory.
 SetTitleMatchMode(2)
 
@@ -56,3 +56,5 @@ if(iconPath != "") {
 
 WinWait(windowName)
 WinHide(windowName)
+
+ProcessWaitClose(processId)
