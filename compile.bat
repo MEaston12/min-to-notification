@@ -1,0 +1,1 @@
+.\Compiler\Ahk2Exe.exe /in .\min-to-notification.ah2 /out .\min-to-notification.exe
