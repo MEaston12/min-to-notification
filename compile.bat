@@ -1,1 +1,0 @@
-.\Compiler\Ahk2Exe.exe /in .\min-to-notification.ah2 /out .\out\start.exe /icon icon.ico /ahk ./Compiler/AutoHotkey.exe
